@@ -86,8 +86,10 @@ module.exports = function (_dirname) {
       console.error(Chalk.red(' - Error Found! -'))
       console.error(Chalk.bold('  Message:'), err.message)
       console.error(Chalk.bold('  Details:'), ErrorDetail[code])
-      console.error(Chalk.bold('  moreinfo:'), JSON.stringify(moreinfo, null, 2))
-      console.error(err)
+      if (process.env.DEBUG_VERBOSE === 'YAGG') {
+        console.error(Chalk.bold('  moreinfo:'), JSON.stringify(moreinfo, null, 2))
+        console.error(err)
+      }
       console.error(Chalk.red(`----------- exit code ${code || 1} ------------`))
       process.exit(code)
     }
