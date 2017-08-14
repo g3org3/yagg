@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.3 (2017-08-13)
+#### Bug fix
+* `yagg cli`
+  * dumn fix
+
 ## 0.4.2 (2017-08-13)
 #### Bug fix
 * `yagg cli`
