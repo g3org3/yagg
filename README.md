@@ -11,9 +11,9 @@ Install the yagg globally
 npm install -g yagg
 ```
 
-Install the sample generator, also globally
+Add the sample generator
 ```sh
-npm install -g yagg-custom
+yagg add custom
 ```
 
 ### Create a sample generator
