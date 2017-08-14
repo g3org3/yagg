@@ -1,3 +1,8 @@
+String.prototype.replaceAll = function(search, replacement) {
+  var target = this;
+  return target.replace(new RegExp(search, 'g'), replacement);
+};
+
 module.exports = function (_dirname) {
   const Exec = require('child_process').exec
   const Chalk = require('chalk')
@@ -25,9 +30,19 @@ module.exports = function (_dirname) {
     // remove first slash
     _name = (firstChar === '/') ? name.substr(1) : name
     // remove last slash
-    _name = (lastChar === '/') ? _name.substr(0, _name.length) : _name
+    _name = (lastChar === '/') ? _name.substr(0, _name.length - 1) : _name
     
     return _name
+  }
+
+  function transformContextIntoSedString(context) {
+    if (!context || typeof context === 'string') return ''
+
+    return Object.keys(context).map((key, index) => {
+      const value = context[key].toString().replaceAll('\\.', '\\\\.')
+      const pipe = (index === 0)? ' |' : ''
+      return `${pipe} sed s.#{${key}}.${value}.g`
+    }).join(' |')
   }
 
   function parseWorkingDir (dir) {
@@ -66,11 +81,13 @@ module.exports = function (_dirname) {
       console.log(' ', args)
       console.log('---------------------------------')
     },
-    error: function error (err, code) {
+    error: function error (err, code, moreinfo) {
       console.error(Chalk.red('\n--------------------------------------'))
       console.error(Chalk.red(' - Error Found! -'))
       console.error(Chalk.bold('  Message:'), err.message)
       console.error(Chalk.bold('  Details:'), ErrorDetail[code])
+      console.error(Chalk.bold('  moreinfo:'), JSON.stringify(moreinfo, null, 2))
+      console.error(err)
       console.error(Chalk.red(`----------- exit code ${code || 1} ------------`))
       process.exit(code)
     }
@@ -83,5 +100,6 @@ module.exports = function (_dirname) {
     logger,
     Errors,
     envInfo,
+    transformContextIntoSedString,
   }
 }
