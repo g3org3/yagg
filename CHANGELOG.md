@@ -3,13 +3,13 @@
 ## 0.5.0 (2017-08-13)
 #### Enhacement
 * `yagg cli`
- * new feature install dependencies
+  * new feature install dependencies
 #### Internal
 * `yagg core`
- * Refactor, move getDeps to utils
- * remove envInfo
- * update Error codes
- * add test for install deps
+  * Refactor, move getDeps to utils
+  * remove envInfo
+  * update Error codes
+  * add test for install deps
 
 ## 0.4.1 to 0.4.4 (2017-08-13)
 #### Bug fix
