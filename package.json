@@ -12,6 +12,11 @@
       "/app/"
     ]
   },
+  "files": [
+    "lib",
+    "utils",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/g3org3/react-gen-scripts.git"
