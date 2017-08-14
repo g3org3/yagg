@@ -1,26 +1,19 @@
 {
   "name": "yagg",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "g3org3 generator module",
   "main": "lib/index.js",
   "scripts": {
     "test": "jest --watch",
     "lint": "standard -v | snazzy"
   },
-  "jest": {
-    "testPathIgnorePatterns": [
-      "/app/"
-    ]
-  },
   "files": [
-    "bin",
     "lib",
-    "utils",
     "package.json",
     "README.md"
   ],
   "bin": {
-    "yagg": "bin/index.js"
+    "yagg": "lib/bin/index.js"
   },
   "repository": {
     "type": "git",
