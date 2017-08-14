@@ -1,18 +1,11 @@
 # Changelog
 
-## 0.4.3 (2017-08-13)
+## 0.4.1 to 0.4.4 (2017-08-13)
 #### Bug fix
 * `yagg cli`
+  * fix typo
   * dumn fix
-
-## 0.4.2 (2017-08-13)
-#### Bug fix
-* `yagg cli`
   * add package.json to files
-
-## 0.4.1 (2017-08-13)
-#### Bug fix
-* `yagg cli`
   * fix typo, removed trailing coma
 
 ## 0.4.0 (2017-08-13)
