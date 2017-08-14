@@ -1,0 +1,33 @@
+{
+  "name": "@g3org3/generator",
+  "version": "0.1.0",
+  "description": "g3org3 generator module",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "lint": "standard -v | snazzy"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/app/"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g3org3/react-gen-scripts.git"
+  },
+  "author": "George <7jagjag@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/g3org3/react-gen-scripts/issues"
+  },
+  "homepage": "https://github.com/g3org3/react-gen-scripts#readme",
+  "devDependencies": {
+    "jest": "^20.0.4",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.3"
+  },
+  "dependencies": {
+    "chalk": "^2.1.0"
+  }
+}
