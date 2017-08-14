@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.0 (2017-08-13)
+#### Enhacement
+* `yagg cli`
+  * you can now add a custom generator from cli
+  * you can now remove a custom generator from cli
+
+## 0.3.0 (2017-08-13)
+ - add cli
+
 ## 0.1.0 (2017-08-13)
  - can declare variables in files to be replaced #{token}
  - created node module to handle tree cloning

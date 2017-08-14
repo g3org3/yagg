@@ -29,6 +29,24 @@ program
   });
 
 program
+  .command('remove <generator>')
+  .description('remove a custom generator')
+  .action(function (generator, options) {
+    Shell(`npm uninstall -g yagg-${generator}`)
+    .then(console.log)
+    .catch(err => logger.error(err, GENERAL, { name: yaggGenerator}))
+  });
+
+program
+  .command('add <generator>')
+  .description('add a custom generator')
+  .action(function (generator, options) {
+    Shell(`npm install -g yagg-${generator}`)
+    .then(console.log)
+    .catch(err => logger.error(err, GENERAL, { name: yaggGenerator}))
+  });
+
+program
   .command('list')
   .description('list all available generators')
   .option('-v, --verbose', 'display more info in any command')
