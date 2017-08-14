@@ -1,7 +1,18 @@
 # yagg
 Yet Another Great Generator
-
 more info soon
+
+## Usage
+```sh
+# instal cli
+npm install -g yagg
+
+# add yagg-custom generator
+yagg add custom
+
+mkdir yagg-tutorial
+yagg run custom
+```
 
 ## How can I create my custom generator
 ```javascript
