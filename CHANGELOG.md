@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.1 (2017-08-13)
+#### Bug fix
+* `yagg cli`
+  * fix typo, removed trailing coma
+
 ## 0.4.0 (2017-08-13)
 #### Enhacement
 * `yagg cli`
