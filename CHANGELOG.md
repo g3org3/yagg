@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.1 (2017-08-14)
+#### Internal
+* `yagg cli`
+  * refactor run command
+  * add message to list command
+
 ## 0.5.0 (2017-08-13)
 #### Enhacement
 * `yagg cli`

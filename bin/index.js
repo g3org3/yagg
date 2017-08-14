@@ -15,17 +15,15 @@ program
   .command('run <generator>')
   .description('run a custom generator')
   .action(function (generator, options) {
-    getDeps().then(deps => {
-      const index = deps.map(dep => dep.id).indexOf(`yagg-${generator}`)
-      if (index === -1) {
-        console.log('\n No available generators')
-        console.log('\n\n')
+    Shell(`yagg-${generator}`)
+    .then(console.log)
+    .catch(err => {
+      if (err.message.indexOf('command not found') === -1) {
+        logger.error(err, GENERAL, { name: generator})
         return
       }
-      const yaggGenerator = deps[index].id
-      Shell(`${yaggGenerator}`)
-      .then(console.log)
-      .catch(err => logger.error(err, GENERAL, { name: yaggGenerator}))
+      console.log(`\n No available generator ${generator}`)
+      console.log('\n\n')
     })
   });
 
@@ -52,6 +50,7 @@ program
   .description('list all available generators')
   .option('-v, --verbose', 'display more info in any command')
   .action(function (options) {
+    console.log('Searching for generator...  this might take a minute')
     getDeps().then(deps => {
       if (deps.length === 0) {
         console.log('\n No available generators')
