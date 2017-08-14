@@ -4,11 +4,12 @@ String.prototype.replaceAll = function(search, replacement) {
 };
 
 module.exports = function (_dirname) {
-  const Exec = require('child_process').exec
   const Chalk = require('chalk')
   const envInfo = require('./envInfo')(_dirname)
   const Errors = require('./Errors')
   const getDeps = require('./getDeps')
+  const shell = require('./shell')
+  const installDeps = require('./installDeps')
   const ErrorDetail = Errors.details
   const ErrorType = Errors.types
   const CURRENT_DIR = envInfo.CURRENT_DIR
@@ -66,15 +67,6 @@ module.exports = function (_dirname) {
     .catch(err => logger.error(err, ErrorType.LIST_DIR))
   }
 
-  function shell (cmd) {
-    return new Promise((resolve, reject) => {
-      Exec(cmd, (err, stdout, stderr) => {
-        if (err || stderr) reject(err || stderr)
-        else resolve(stdout)
-      })
-    })
-  }
-
   const logger = {
     info: function info () {
       const args = Object.keys(arguments).map(key => arguments[key]).join('\n  ')
@@ -105,5 +97,6 @@ module.exports = function (_dirname) {
     envInfo,
     transformContextIntoSedString,
     getDeps,
+    installDeps
   }
 }

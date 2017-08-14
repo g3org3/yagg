@@ -14,33 +14,9 @@ mkdir yagg-tutorial
 yagg run custom
 ```
 
-## How can I create my custom generator
-```javascript
-/* /index.js */
+## Changelog
+[https://github.com/g3org3/yagg/blob/master/CHANGELOG.md](https://github.com/g3org3/yagg/blob/master/CHANGELOG.md)
 
-#! /usr/bin/env node
-
-const _gen = require('yagg')(__dirname)
-
-// My Custom Generator
-const context = {
-  image: 'registry.jorgeadolfo.com/name',
-  port: '8000'
-}
-
-// copies the entire file structure in ./app
-_gen.cloneTemplateStructure(context)
-```
-
-File Structure
-```bash
-├── app
-│   ├── docker
-│   │   ├── Dockerfile
-│   └── src
-│       ├── MyApp.js
-│       └── utils
-│           └── index.js
-├── index.js
-└── package.json
-```
+## API
+* cloneTemplateStructure
+* installDeps
