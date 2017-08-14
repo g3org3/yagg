@@ -1,5 +1,5 @@
 {
-  "name": "@g3org3/generator",
+  "name": "yagg",
   "version": "0.1.0",
   "description": "g3org3 generator module",
   "main": "lib/index.js",
@@ -19,14 +19,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/g3org3/react-gen-scripts.git"
+    "url": "git+https://github.com/g3org3/yagg.git"
   },
   "author": "George <7jagjag@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/g3org3/react-gen-scripts/issues"
+    "url": "https://github.com/g3org3/yagg/issues"
   },
-  "homepage": "https://github.com/g3org3/react-gen-scripts#readme",
+  "homepage": "https://github.com/g3org3/yagg#readme",
   "devDependencies": {
     "jest": "^20.0.4",
     "snazzy": "^7.0.0",

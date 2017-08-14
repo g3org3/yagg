@@ -1,4 +1,5 @@
-# @g3org3/generator
+# yagg
+Yet Another Great Generator
 
 more info soon
 

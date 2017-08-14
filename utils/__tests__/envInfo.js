@@ -1,4 +1,4 @@
-const repo = 'g3org3-generator'
+const repo = 'yagg'
 
 describe('envInfo', () => {
   it('check env info', () => {
