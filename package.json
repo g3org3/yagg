@@ -16,6 +16,7 @@
     "bin",
     "lib",
     "utils",
+    "package.json",
     "README.md"
   ],
   "bin": {

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.2 (2017-08-13)
+#### Bug fix
+* `yagg cli`
+  * add package.json to files
+
 ## 0.4.1 (2017-08-13)
 #### Bug fix
 * `yagg cli`
