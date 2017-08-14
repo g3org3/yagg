@@ -4,7 +4,9 @@ more info soon
 
 ## Usage
 ```javascript
-const _gen = require('@g3org3/generator')
+#! /usr/bin/env node
+
+const _gen = require('@g3org3/generator')(__dirname)
 
 // My Custom Generator
 const context = {
