@@ -9,7 +9,7 @@ more info soon
 
 #! /usr/bin/env node
 
-const _gen = require('@g3org3/generator')(__dirname)
+const _gen = require('yagg')(__dirname)
 
 // My Custom Generator
 const context = {
