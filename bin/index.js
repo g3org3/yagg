@@ -4,6 +4,7 @@ const Utils = require('../utils')()
 const logger = Utils.logger
 const Shell = Utils.shell
 const GENERAL = Utils.Errors.types.GENERAL
+const getDeps = Utils.getDeps
 const program = require('commander')
 const version = require('../package.json').version
 
@@ -70,21 +71,3 @@ program
   });
 
 program.parse(process.argv);
-
-// move to utils
-function getDeps() {
-  return Shell('npm list -g --depth=0 --json=true')
-  .then(rawOutput => {
-    const globalPackgeJson = JSON.parse(rawOutput)
-    const depsKeys = Object.keys(globalPackgeJson.dependencies)
-    .filter(key => key.indexOf('yagg') !== -1)
-    .filter(key => key !== 'yagg')
-    .map(key => {
-      const _dep = globalPackgeJson.dependencies[key]
-      _dep.id = key
-      return _dep
-    })
-    return depsKeys
-  })
-  .catch(err => logger.error(err, GENERAL))
-}

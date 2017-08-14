@@ -8,6 +8,7 @@ module.exports = function (_dirname) {
   const Chalk = require('chalk')
   const envInfo = require('./envInfo')(_dirname)
   const Errors = require('./Errors')
+  const getDeps = require('./getDeps')
   const ErrorDetail = Errors.details
   const ErrorType = Errors.types
   const CURRENT_DIR = envInfo.CURRENT_DIR
@@ -103,5 +104,6 @@ module.exports = function (_dirname) {
     Errors,
     envInfo,
     transformContextIntoSedString,
+    getDeps,
   }
 }
