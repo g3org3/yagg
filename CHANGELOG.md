@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5.3 (2017-08-13)
+#### Bug fix
+* `yagg core`
+  * check if file is an image
+
 ## 0.5.1 (2017-08-14)
 #### Internal
 * `yagg cli`
