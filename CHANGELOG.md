@@ -1,5 +1,15 @@
 # Changelog
 
+## Next
+#### Enhacement
+* `yagg cli`
+  * add -v option to display version
+#### Internal
+* `yagg cli`
+  * lint code
+* `yagg core`
+  * lint code
+
 ## 0.5.5 (2017-08-14)
 #### Internal
 * `yagg core`
