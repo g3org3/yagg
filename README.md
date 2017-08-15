@@ -1,3 +1,5 @@
+[![Build Status][travis]][travis-url]
+
 # yagg
 Yet Another Great Generator
 more info soon
@@ -59,3 +61,6 @@ sample-express
 
 ## Contributors
 * George <7jagjag@gmail.com>
+
+[travis]: https://travis-ci.org/g3org3/yagg.svg?branch=master
+[travis-url]: https://travis-ci.org/g3org3/yagg
