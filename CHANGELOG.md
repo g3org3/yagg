@@ -14,7 +14,6 @@
   * lint code
   * add travis ci
   * refactor
-  * create api doc
 
 ## 0.5.5 (2017-08-14)
 #### Internal

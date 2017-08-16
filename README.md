@@ -53,11 +53,6 @@ sample-express
 ## Changelog
 [https://github.com/g3org3/yagg/blob/master/CHANGELOG.md](https://github.com/g3org3/yagg/blob/master/CHANGELOG.md)
 
-## API
-[See API documentation.](https://github.com/g3org3/yagg/blob/master/API.md)
-* cloneTemplateStructure
-* installDependencies
-
 ## Contributors
 * George <7jagjag@gmail.com>
 
