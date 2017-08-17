@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.0
+#### Enhancement
+* `yagg core`
+  * able to install dependencies & devDependencies
+
 ## 1.0.0
 #### Enhancement
 * `yagg cli`
