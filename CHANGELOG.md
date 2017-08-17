@@ -1,14 +1,19 @@
 # Changelog
 
 ## Next
+
+## 0.5.6 (2017-08-15)
 #### Enhacement
 * `yagg cli`
   * add -v option to display version
-#### Internal
-* `yagg cli`
-  * lint code
 * `yagg core`
+  * friendly error reponse
+  * debug flags
+#### Internal
+* `yagg cli & core`
   * lint code
+  * add travis ci
+  * refactor
 
 ## 0.5.5 (2017-08-14)
 #### Internal

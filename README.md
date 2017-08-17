@@ -1,8 +1,6 @@
-[![Build Status][travis]][travis-url]
 
-# yagg
+# yagg [![Build Status][travis]][travis-url]
 Yet Another Great Generator
-more info soon
 
 ## Getting Started
 You will need Node >= 6 installed. [How do I install node? click here to find out about nvm](https://github.com/creationix/nvm#installation)
@@ -54,10 +52,6 @@ sample-express
 
 ## Changelog
 [https://github.com/g3org3/yagg/blob/master/CHANGELOG.md](https://github.com/g3org3/yagg/blob/master/CHANGELOG.md)
-
-## API
-* cloneTemplateStructure
-* installDeps
 
 ## Contributors
 * George <7jagjag@gmail.com>
