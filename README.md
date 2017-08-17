@@ -26,8 +26,7 @@ sample-express
 │   └── server.js
 ├── index.js
 ├── node_modules
-├── package.json
-└── yarn.lock
+└── package.json
 ```
 
 ### yagg cli help
@@ -39,15 +38,16 @@ sample-express
   Options:
 
     -V, --version  output the version number
+    -v, --version  output the version number
     -h, --help     output usage information
 
 
   Commands:
 
-    run <generator>     run a custom generator
-    remove <generator>  remove a custom generator
-    add <generator>     add a custom generator
-    list [options]      list all available generators
+    run [options] <generator>  run a custom generator
+    remove <generator>         remove a custom generator
+    add <generator>            add a custom generator
+    list [options]             list all available generators
 ```
 
 ## Changelog

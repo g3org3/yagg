@@ -1,9 +1,15 @@
 # Changelog
 
-## Next
+## 1.0.0
+#### Enhancement
+* `yagg cli`
+  * add option -p to run command, to specify a path of your template
+* `yagg core`
+  * change how to write a template
+  * ask questions feature
 
 ## 0.5.6 (2017-08-15)
-#### Enhacement
+#### Enhancement
 * `yagg cli`
   * add -v option to display version
 * `yagg core`
@@ -32,7 +38,7 @@
   * add message to list command
 
 ## 0.5.0 (2017-08-13)
-#### Enhacement
+#### Enhancement
 * `yagg cli`
   * new feature install dependencies
 #### Internal
@@ -51,7 +57,7 @@
   * fix typo, removed trailing coma
 
 ## 0.4.0 (2017-08-13)
-#### Enhacement
+#### Enhancement
 * `yagg cli`
   * you can now add a custom generator from cli
   * you can now remove a custom generator from cli
