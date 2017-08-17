@@ -1,15 +1,12 @@
 language: node_js
 cache:
   directories:
-  - node_modules
+    - node_modules
 node_js:
-- '6'
+  - '6'
 before_script:
-- npm prune
+  - npm prune
 script:
-- npm t
+  - npm t
 notifications:
-  slack:
-    rooms:
-      - secure: "sdfusdhfsdofguhdfgubdsifgudfbgs3453durghssecurestringidsuag34522irueg="
-    on_success: always
+  email: false
