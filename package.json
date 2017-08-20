@@ -8,7 +8,8 @@
     "test": "npm run lint && jest",
     "lint": "eslint .",
     "coverage": "npm run test -- --coverage",
-    "format": "prettier-eslint --write \"lib/**/*.js\""
+    "format": "prettier-eslint --write \"lib/**/*.js\"",
+    "preinstall": "cp pre-commit.sh .git/hooks/pre-commit"
   },
   "files": [
     "lib",
