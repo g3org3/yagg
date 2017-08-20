@@ -11,16 +11,34 @@ Install the yagg globally
 npm install -g yagg
 ```
 
-Add the sample template
+## Usage
+Add the template
 ```sh
 yagg add custom
 ```
 
-### Create a new project from template
+Now create a new project from template
 ```sh
 yagg new custom
+? What is the project name? sample-app
+? Enter a small description A sample template with yagg
+? Enter your email 7jagjag@gmail.com
+? Enter your name George
 
-sample-express
+------ YAGG --------
+ create dir: [ ✅  ] ./sample-app/app
+ create dir: [ ✅  ] ./sample-app
+  copy file: [ ✅  ] index.js
+  copy file: [ ✅  ] server.js
+  copy file: [ ✅  ] package.json
+
+Success! ✨🌟 happy coding 🎉
+  cd sample-app
+```
+
+outputs
+```sh
+sample-app
 ├── app
 │   └── server.js
 ├── index.js
