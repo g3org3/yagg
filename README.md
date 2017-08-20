@@ -43,10 +43,10 @@ sample-express
 
   Commands:
 
-    run [options] <generator>  run a custom generator
-    remove <generator>         remove a custom generator
-    add <generator>            add a custom generator
-    list [options]             list all available generators
+    new [options] <template> [projectName]  create a new project from a template
+    remove <template>                       remove a template
+    add <template>                          add a template
+    list [options]                          list all available templates
 ```
 
 ## Changelog
