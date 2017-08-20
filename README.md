@@ -1,6 +1,9 @@
+[![Build Status][travis]][travis-url]
+[![npm package][npm-image]](npm-url)
 
-# yagg [![Build Status][travis]][travis-url]
-Yet Another Great Generator
+# yagg
+Yet Another Great Generator - 
+✨🚀 Simple and fast generator, create your own template in seconds
 
 ## Getting Started
 You will need Node >= 6 installed. [How do I install node? click here to find out about nvm](https://github.com/creationix/nvm#installation)
@@ -75,3 +78,5 @@ sample-app
 
 [travis]: https://travis-ci.org/g3org3/yagg.svg?branch=master
 [travis-url]: https://travis-ci.org/g3org3/yagg
+[npm-image]: https://img.shields.io/npm/v/yagg.svg?style=flat-square
+[npm-url]: https://www.npmjs.org/package/yagg
