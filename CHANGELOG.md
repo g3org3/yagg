@@ -4,6 +4,8 @@
 #### Enhancement
 * `yagg cli`
   * Update command names and docs
+  * new project using current directory
+  * choose a template from the list command
 #### Bug fix
 * `yagg core`
   * fix install dependencies
