@@ -6,7 +6,8 @@
   "scripts": {
     "test:watch": "jest --watch",
     "test": "npm run lint && jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "coverage": "npm run test -- --coverage"
   },
   "files": [
     "lib",
