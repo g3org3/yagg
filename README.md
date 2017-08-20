@@ -11,15 +11,14 @@ Install the yagg globally
 npm install -g yagg
 ```
 
-Add the sample generator
+Add the sample template
 ```sh
 yagg add custom
 ```
 
-### Create a sample generator
+### Create a new project from template
 ```sh
-mkdir sample-express
-yagg run custom
+yagg new custom
 
 sample-express
 ├── app

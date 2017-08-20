@@ -1,5 +1,13 @@
 # Changelog
 
+## Next
+#### Enhancement
+* `yagg cli`
+  * Update command names and docs
+#### Bug fix
+* `yagg core`
+  * fix install dependencies
+
 ## 1.1.0
 #### Enhancement
 * `yagg core`
