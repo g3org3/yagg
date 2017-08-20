@@ -1,7 +1,7 @@
 [![Build Status][travis]][travis-url]
 [![npm package][npm-image]](npm-url)
 
-# yagg
+# YAGG
 Yet Another Great Generator - 
 ✨🚀 Simple and fast generator, create your own template in seconds
 
