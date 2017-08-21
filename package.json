@@ -9,13 +9,12 @@
     "lint": "eslint .",
     "coverage": "npm run test -- --coverage",
     "format": "prettier-eslint --write \"lib/**/*.js\"",
-    "preinstall": "cp pre-commit.sh .git/hooks/pre-commit"
+    "preinstall": "ls .git && cp pre-commit.sh .git/hooks/pre-commit"
   },
   "files": [
     "lib",
     "package.json",
-    "README.md",
-    "pre-commit.sh"
+    "README.md"
   ],
   "bin": {
     "yagg": "lib/bin/index.js"
