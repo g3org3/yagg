@@ -14,7 +14,8 @@
   "files": [
     "lib",
     "package.json",
-    "README.md"
+    "README.md",
+    "pre-commit.sh"
   ],
   "bin": {
     "yagg": "lib/bin/index.js"

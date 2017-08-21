@@ -2,6 +2,11 @@
 
 ## Next
 
+## 1.2.1
+#### Bug fix
+* `yagg core & yagg cli`
+  * add missing file
+
 ## 1.2.0
 #### Enhancement
 * `yagg cli`
