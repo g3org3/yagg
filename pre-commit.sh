@@ -1,7 +1,14 @@
 #!/bin/sh
-if [[ `npm t && node_modules/.bin/prettier-eslint --list-different "lib/**/*.js"` ]]; then
-  exit 0;
+if [[ `node_modules/.bin/prettier-eslint --list-different "lib/**/*.js"` ]]; then
+  echo
+  echo "⚠️ Code should be fomatted with prettier ⚠️"
+  echo "Please run: npm run format"
+  echo "         or yarn format"
+  echo
+  echo "to format your code, thanks"
+  echo
+  exit 1
 else
-  echo "Please run npm run format"
-  exit 1;
+  echo "> prettier: ✅"
+  npm t
 fi
