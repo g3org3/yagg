@@ -1,6 +1,8 @@
 # Changelog
 
 ## Next
+
+## 1.2.0
 #### Enhancement
 * `yagg cli`
   * Update command names and docs
