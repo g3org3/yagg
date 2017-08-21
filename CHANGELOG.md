@@ -9,7 +9,10 @@
 #### Bug fix
 * `yagg core`
   * fix install dependencies
-
+#### Internal
+* `yagg core & yagg cli`
+  * add git pre-commit hook
+  * add prettier-eslint
 ## 1.1.0
 #### Enhancement
 * `yagg core`
