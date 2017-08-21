@@ -2,6 +2,11 @@
 
 ## Next
 
+## 1.2.4
+#### Bug fix
+* `yagg cli`
+  * fix list, not choosing a template error
+
 ## 1.2.1
 #### Bug fix
 * `yagg core & yagg cli`
