@@ -1,6 +1,6 @@
 {
   "name": "yagg",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "g3org3 generator module",
   "main": "lib/index.js",
   "scripts": {
