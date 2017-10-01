@@ -69,6 +69,17 @@ sample-app
     add <template>                          add a template
     list [options]                          list all available templates
 ```
+## Development
+Fork, then clone the repo:
+```sh
+git clone https://github.com/your-username/yagg.git
+cd yagg
+git remote set-url g3 https://github.com/g3org3/yagg.git
+npm install
+npm link
+yagg --help
+```
+
 
 ## Changelog
 [https://github.com/g3org3/yagg/blob/master/CHANGELOG.md](https://github.com/g3org3/yagg/blob/master/CHANGELOG.md)
