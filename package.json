@@ -46,9 +46,12 @@
     "commander": "^2.11.0",
     "enquirer": "^1.0.2",
     "glob": "^7.1.2",
+    "globby": "^6.1.0",
+    "joi": "^11.1.1",
+    "lowdb": "^1.0.0",
     "prompt-checkbox": "^2.2.0",
     "prompt-confirm": "^1.2.0",
-    "prompt-list": "^2.1.0",
+    "prompt-list": "^2.2.0",
     "prompt-radio": "^1.2.1"
   }
 }
