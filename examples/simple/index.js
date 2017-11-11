@@ -1,4 +1,5 @@
 
 module.exports = {
-  __dirname
+  __dirname,
+  name: 'Simple generator'
 }
